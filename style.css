@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    flex-direction: column;
+}
+#right{
+    margin-right: 120px;
+    float: right;
+}
+#left{
+    margin-left: 120px;
+    float: left;
+}
+#result{
+    background-color: rgba(199, 191, 207, 0.817);
+    /* width: fit-content; */
+    /* padding: 10px; */
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(28, 26, 26);
+    /* border: 1px solid black; */
+}
+.info #left .green{
+    padding-left: 8px;
+    padding-right: 9px;
+    border-radius:50%;
+    margin-left: 5px;
+    background-color: green;
+}
+.info #right .red{
+    padding-left: 8px;
+    padding-right: 9px;
+    border-radius:50%;
+    margin-left: 5px;
+    background-color: rgb(204, 20, 20);
+}
+.con{
+    min-height: 380px;
+    width: 80%;
+    background-color: rgba(89, 32, 143, 0.817);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.con span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: rgb(240, 229, 229);
+    cursor: pointer;
+}
+.con span button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(23, 22, 22);
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: rgb(232, 217, 217);
+    transition: 0.5s ease-in-out;
+    &:hover{
+        background-color: rgb(181, 165, 165);
+        box-shadow: 0 0 20px black;
+    }
+}
+.stone,.paper,.scissor{
+    height: 180px;
+    width: 180px;
+    /* border: 2px solid rgb(85, 77, 77); */
+    border-radius: 50%;
+    /* outline: 1px solid rgb(51, 45, 45); */
+    /* outline-offset: -8px; */
+    background-color: rgb(229, 213, 213);
+    transition: 0.5s ease-in-out;
+    &:hover{
+        /* outline-offset: 0px; */
+        box-shadow: 0 0 20px black;
+    }
+}
+.stone1{
+    background: url("rock.png");
+    background-size: contain;
+}
+.stone2{
+    background: url("paper.png");
+    background-size: contain;
+}
+.stone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: cover; */
+}
+.stone img{
+    margin-top: 15px;
+    height: 218px;
+}
